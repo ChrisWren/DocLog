@@ -1,0 +1,63 @@
+$green: #4ad391;
+$mainTheme: $green;
+
+@mixin breakpoint($point) {
+  @if $point == big-phone {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == small-phone {
+    @media (max-width: 630px)  { @content; }
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  color: hsl(10, 1%, 22%);
+  -webkit-font-smoothing: antialiased;
+  font-family: futura, sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 17px;
+
+  @include breakpoint(big-phone) {
+    font-size: 16px;
+  }
+  @include breakpoint(small-phone) {
+    font-size: 12px;
+  }
+}
+
+a {
+  color: hsl(10, 1%, 20%);
+  @include transition(color 0.2s);
+  &:hover {
+    color: darken($mainTheme, 10);
+  }
+}
+
+.content {
+  margin: 0 0 0 380px;
+  max-width: 680px;
+  width: 55%;
+  @include breakpoint(big-phone) {
+    margin: 45px auto;
+    width: 86%;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
+
+.group {
+  @include clearfix;
+}

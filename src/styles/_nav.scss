@@ -1,0 +1,48 @@
+.nav {
+  position: fixed;
+  z-index: 100;
+  padding: 0 50px;
+  height: 100%;
+  top: 0;
+  background: $mainTheme;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include breakpoint(big-phone) {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    @include clearfix;
+  }
+}
+
+.name {
+  font-weight: normal;
+  font-size: 2.1em;
+  margin: 35px 0 30px;
+  @include breakpoint(big-phone) {
+    margin: 5px 20px;
+    float: left;
+  }
+}
+
+
+.nav-links {
+  font-size: 1.5em;
+  li {
+    margin-bottom: 18px;
+  }
+  @include breakpoint(big-phone) {
+    margin: 0;
+    li {
+      float: left;
+      margin: .55em;
+    }
+  }
+}
