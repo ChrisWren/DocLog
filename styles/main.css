@@ -1,0 +1,232 @@
+@import 'http://fonts.googleapis.com/css?family=Merriweather';
+@import url(solarized-dark.syntax.css);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000313}}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000319}}
+body {
+  margin: 0;
+  color: #393838;
+  -webkit-font-smoothing: antialiased;
+  font-family: futura, sans-serif;
+  background-color: #fafafa;
+  font-size: 17px;
+}
+@media (max-width: 1250px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000319}}
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 630px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000319}}
+  body {
+    font-size: 12px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000335}}
+a {
+  color: #343332;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000338}}
+a:hover {
+  color: #464646;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000343}}
+.content {
+  margin: 50px 0 0 380px;
+  max-width: 680px;
+  width: 55%;
+}
+@media (max-width: 1250px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000343}}
+  .content {
+    margin: 45px auto;
+    width: 86%;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000353}}
+i {
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000357}}
+h1 {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000362}}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\000031}}
+.nav {
+  z-index: 100;
+  padding: 0 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #5f5f5f;
+  color: white;
+  box-shadow: 0px 0px 4px black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000310}}
+.nav li {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000313}}
+.nav a {
+  position: relative;
+  color: #d1d1d1;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000317}}
+.nav a:hover {
+  color: white;
+}
+@media (max-width: 1250px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\000031}}
+  .nav {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_base\.scss}line{font-family:\0000362}}
+  .nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000330}}
+.current-selection {
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000334}}
+.name {
+  font-weight: normal;
+  font-size: 2.1em;
+  margin: 35px 0 30px;
+}
+@media (max-width: 1250px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000334}}
+  .name {
+    margin: 5px 20px;
+    float: left;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000345}}
+.nav-links {
+  font-size: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000347}}
+.nav-links li {
+  padding: 5px 5px;
+}
+@media (max-width: 1250px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000345}}
+  .nav-links {
+    margin: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_nav\.scss}line{font-family:\0000352}}
+  .nav-links li {
+    float: left;
+    margin: .55em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\000031}}
+.post-head {
+  border-bottom: 1px solid #d2d1d1;
+  margin: 2em 0;
+  padding-bottom: 5px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\000038}}
+.post-head a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\0000313}}
+.post-title {
+  font-size: 1.7em;
+  float: left;
+  padding-right: 4.8em;
+  margin: 5px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\0000320}}
+.post-date {
+  opacity: 0.4;
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\0000329}}
+.post-body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.65em;
+  font-size: 1em;
+  margin-bottom: 1.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\0000336}}
+p code {
+  background: #ebebff;
+  border: 1px solid #e6e6e6;
+  padding: 0 0.23em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\0000343}}
+code {
+  font-size: .85em;
+  line-height: 1.5438em;
+  font-family: Monaco, Consolas, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\0000351}}
+pre {
+  font-family: Monaco, Consolas, monospace;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\0000355}}
+.highlight {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/christopherwren\/Documents\/github\/crimsonscale\/src\/styles\/_post\.scss}line{font-family:\0000357}}
+.highlight pre {
+  padding: 15px;
+}
