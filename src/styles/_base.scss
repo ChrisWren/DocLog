@@ -1,5 +1,5 @@
-$green: #4ad391;
-$mainTheme: $green;
+$gray: rgb(95, 95, 95);
+$mainTheme: $gray;
 
 @mixin breakpoint($point) {
   @if $point == big-phone {
@@ -41,13 +41,21 @@ a {
 }
 
 .content {
-  margin: 0 0 0 380px;
+  margin: 50px 0 0 380px;
   max-width: 680px;
   width: 55%;
   @include breakpoint(big-phone) {
     margin: 45px auto;
     width: 86%;
   }
+}
+
+i {
+  text-shadow: 0 1px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
 }
 
 @mixin clearfix {

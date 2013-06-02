@@ -1,16 +1,21 @@
 .nav {
-  position: fixed;
   z-index: 100;
   padding: 0 50px;
-  height: 100%;
+  width: 100%;
+  position: fixed;
   top: 0;
   background: $mainTheme;
   color: white;
+  box-shadow: 0px 0px 4px black;
+  li {
+    display: inline-block;
+  }
   a {
-    color: white;
+    position: relative;
+    color: rgb(209, 209, 209);;
     text-decoration: none;
     &:hover {
-      text-decoration: underline;
+      color: white
     }
   }
 
@@ -20,6 +25,10 @@
     height: auto;
     @include clearfix;
   }
+}
+
+.current-selection {
+  color: black;
 }
 
 .name {
@@ -36,7 +45,7 @@
 .nav-links {
   font-size: 1.5em;
   li {
-    margin-bottom: 18px;
+    padding: 5px 5px;
   }
   @include breakpoint(big-phone) {
     margin: 0;

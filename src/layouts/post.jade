@@ -1,6 +1,26 @@
 extends base
-
 block title
-  title= title
-block content
-  mixin post({content: content, date:date, title: title, url: url})
+  title= post.title
+block nav
+  nav.nav
+    ul.nav-links
+      each currentPost in posts
+        if currentPost.title === post.title
+            li
+              if currentPost.icon
+                i(class = "icon-#{currentPost.icon} current-selection")
+              else
+                span.current-selection= currentPost.title
+        else
+            li
+              a(href = "#{currentPost.url}", title = "#{currentPost.title}")
+                if currentPost.icon
+                  i(class = "icon-#{currentPost.icon}")
+                else
+                  span= currentPost.title
+  div.content
+    if post.display
+      h1= post.display
+    else
+      h1= post.title
+    div!= post.content
