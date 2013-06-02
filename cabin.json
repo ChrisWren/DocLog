@@ -1,0 +1,16 @@
+{
+  "styles": [
+    "Sass"
+  ],
+  "templates": [
+    "Jade"
+  ],
+  "grunt-pages-config": {
+    "posts": {
+      "src": "posts",
+      "dest": "<%= cabin.dev %>",
+      "layout": "<%= cabin.src%>/layouts/post.jade",
+      "url": "/:title"
+    }
+  }
+}
