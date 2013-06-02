@@ -1,8 +1,6 @@
 ----
 title: Team
 display: Meet the Team
-date:   2013-05-15
-
 ----
 
 
