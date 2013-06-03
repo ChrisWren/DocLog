@@ -1,9 +1,3 @@
-var cabinConfig = {
-  src: 'src',
-  dev: '.tmp',
-  dist: 'dist'
-};
-
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
@@ -19,7 +13,7 @@ module.exports = function (grunt) {
         livereload: true
       },
       compass: {
-        files: ['<%= cabin.src %>/styles/{,*/}*'],
+        files: ['src/styles/{,*/}*'],
         tasks: ['compass:server']
       },
       pages: {
@@ -30,7 +24,7 @@ module.exports = function (grunt) {
     pages: {
       posts: {
         src: 'posts',
-        dest: '<%= cabin.dev %>',
+        dest: '.tmp',
         layout: '<%= cabin.src%>/layouts/post.jade',
         url: ':title'
       }
@@ -72,20 +66,20 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
-            '<%= cabin.dev %>',
-            '<%= cabin.dist %>/*',
+            '.tmp',
+            'dist/*',
             // This is for making a subtree repo don't delete
-            '!<%= cabin.dist %>/.git*'
+            '!dist/.git*'
           ]
         }]
       },
-      server: '<%= cabin.dev %>'
+      server: '.tmp'
     },
     compass: {
       options: {
-        sassDir: '<%= cabin.src %>/styles',
-        cssDir: '<%= cabin.dev %>/styles',
-        imagesDir: '<%= cabin.src %>/images',
+        sassDir: 'src/styles',
+        cssDir: '.tmp/styles',
+        imagesDir: 'src/images',
         relativeAssets: true
       },
       dist: {},
@@ -101,8 +95,8 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: '<%= cabin.src %>',
-          dest: '<%= cabin.dev %>',
+          cwd: 'src',
+          dest: '.tmp',
           src: [
             '*.{ico,txt}',
             '.htaccess',

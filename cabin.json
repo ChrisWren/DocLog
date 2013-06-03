@@ -8,8 +8,8 @@
   "gruntPages": {
     "posts": {
       "src": "posts",
-      "dest": "<%= cabin.dev %>",
-      "layout": "<%= cabin.src%>/layouts/post.jade",
+      "dest": ".tmp",
+      "layout": "src/layouts/post.jade",
       "url": ":title"
     }
   }
