@@ -5,7 +5,6 @@ var mountFolder = function (connect, dir) {
 module.exports = function (grunt) {
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  var cabin = grunt.file.readJSON('cabin.json');
 
   grunt.initConfig({
     watch: {
@@ -21,7 +20,7 @@ module.exports = function (grunt) {
         tasks: ['pages']
       }
     },
-    pages: cabin.gruntPages,
+    pages: grunt.file.readJSON('cabin.json').gruntPages,
     connect: {
       options: {
         port: 9000,
@@ -37,16 +36,6 @@ module.exports = function (grunt) {
             ];
           }
         }
-      },
-      dist: {
-        options: {
-          middleware: function (connect) {
-            return [
-              // Cant use cabinConfig variables here
-              mountFolder(connect, 'dist')
-            ];
-          }
-        }
       }
     },
     open: {
@@ -59,10 +48,9 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
-            '.tmp',
-            'dist/*',
+            '.tmp/*',
             // This is for making a subtree repo don't delete
-            '!dist/.git*'
+            '!.tmp/.git*'
           ]
         }]
       },
@@ -99,13 +87,22 @@ module.exports = function (grunt) {
           ]
         }]
       }
+    },
+    simplemocha: {
+      options: {
+        globals: ['should'],
+        timeout: 3000,
+        ignoreLeaks: false,
+        ui: 'bdd',
+        reporter: 'nyan'
+      },
+      all: {
+        src: ['test/*.js']
+      }
     }
   });
 
   grunt.registerTask('server', function (target) {
-    if (target === 'dist') {
-      return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
-    }
 
     grunt.task.run([
       'clean:server',
@@ -123,6 +120,10 @@ module.exports = function (grunt) {
     'compass:dist',
     'pages',
     'copy'
+  ]);
+
+  grunt.registerTask('test', [
+    'simplemocha'
   ]);
 
   grunt.registerTask('default', [
