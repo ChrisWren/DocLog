@@ -1,11 +1,11 @@
 {
-  "styles": [
+  "style": [
     "Sass"
   ],
-  "templates": [
+  "template": [
     "Jade"
   ],
-  "grunt-pages-config": {
+  "gruntPages": {
     "posts": {
       "src": "posts",
       "dest": "<%= cabin.dev %>",
