@@ -1,9 +1,9 @@
 {
-  "name": "blog",
+  "name": "ProjDoc",
   "version": "0.0.0",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-pages": "git+ssh://git@github.com:ChrisWren/grunt-pages.git",
+    "grunt-pages": "~0.0.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-compass": "~0.2.0",
     "grunt-contrib-connect": "~0.2.0",
