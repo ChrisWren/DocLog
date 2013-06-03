@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         src: 'posts',
         dest: '<%= cabin.dev %>',
         layout: '<%= cabin.src%>/layouts/post.jade',
-        url: '/:title'
+        url: ':title'
       }
     },
     connect: {
@@ -123,6 +123,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'compass:server',
+      'copy',
       'pages',
       'connect:livereload',
       'open',

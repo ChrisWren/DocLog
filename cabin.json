@@ -10,7 +10,7 @@
       "src": "posts",
       "dest": "<%= cabin.dev %>",
       "layout": "<%= cabin.src%>/layouts/post.jade",
-      "url": "/:title"
+      "url": ":title"
     }
   }
 }
