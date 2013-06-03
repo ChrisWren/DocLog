@@ -10,10 +10,14 @@
     "grunt-contrib-clean": "~0.4.0",
     "grunt-open": "~0.2.0",
     "grunt-contrib-watch": "~0.4.3",
-    "matchdep": "~0.1.1"
+    "matchdep": "~0.1.1",
+    "grunt-simple-mocha": "~0.4.0",
+    "should": "~1.2.2"
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
   }
 }
-
