@@ -1,6 +1,8 @@
 # ProjDoc
 > A theme for the [cabin](https://github.com/colinwren/cabin) static site generator.
 
+![Travis Status](https://travis-ci.org/ChrisWren/grunt-nodemon.png)
+
 This theme is used to build project documentation sites. It is great for use on GitHub or for internal projects within a company.
 
 Click [here](http://chriswren.github.io/ProjDoc/) to see a demo of what it looks like.
