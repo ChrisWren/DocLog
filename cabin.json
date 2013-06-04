@@ -9,7 +9,7 @@
     "posts": {
       "src": "posts",
       "dest": "site",
-      "layout": "src/layouts/post.<% templateLang %>",
+      "layout": "src/layouts/post.<%= templateLang %>",
       "url": ":title"
     }
   }

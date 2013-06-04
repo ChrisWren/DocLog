@@ -5,6 +5,7 @@ var mountFolder = function (connect, dir) {
 module.exports = function (grunt) {
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  var gruntPagesConfig = JSON.parse(grunt.template.process(grunt.file.read('cabin.json'), { data: {templateLang: 'jade'}})).gruntPages;
 
   grunt.initConfig({
     watch: {
@@ -20,7 +21,7 @@ module.exports = function (grunt) {
         tasks: ['pages']
       }
     },
-    pages: grunt.file.readJSON('cabin.json').gruntPages,
+    pages: gruntPagesConfig,
     connect: {
       options: {
         port: 9000,
