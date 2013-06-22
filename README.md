@@ -1,27 +1,30 @@
-# ProjDoc
-> A theme for the [cabin](https://github.com/colinwren/cabin) static site generator.
+# icoDoc
+> A theme for the [Cabin](https://github.com/colinwren/cabin) static site generator.
 
-![Travis Status](https://travis-ci.org/ChrisWren/grunt-nodemon.png)
+[![Travis Status](https://travis-ci.org/ChrisWren/icoDoc.png)](https://travis-ci.org/ChrisWren/icoDoc)
 
 This theme is used to build project documentation sites. It is great for use on GitHub or for internal projects within a company.
 
-Click [here](http://chriswren.github.io/ProjDoc/) to see a demo of what it looks like.
+Click [here](http://chriswren.github.io/icoDoc/) to see a demo of what it looks like.
 
 # Usage
 
 ## Setup
 
-Before using ProjDoc, make sure you have cabin installed:
+Before using icoDoc, make sure you have Cabin installed:
 ```bash
 npm install -g cabin
 ```
 
 Then run the following command to scaffold out a site generator using this theme:
 ```bash
-cabin new <folder> ChrisWren/ProjDoc 
+cabin new docs ChrisWren/icoDoc
 ```
 
-You will now be able to generate project documentation!
+After scaffolding a site generator, you can run it by entering the following command in the `docs` folder:
+```bash
+grunt server
+```
 
 # What's included
 
@@ -49,5 +52,5 @@ This property optionally overrides the `title` so that the document title and he
 #### icon
 Type: `String`
 
-This is the class suffix of the icon to use in the navigation. For example, if I specified `icon: home`, the navigation would use the IcoMoon class `icon-home` when rendering the icon-font link to the post.  
+This is the class suffix of the icon to use in the navigation. For example, if I specified `icon: home`, the navigation would use the IcoMoon class `icon-home` when rendering the icon-font navigation link to the post.  
 
