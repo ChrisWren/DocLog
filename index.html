@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://raw.github.com/colinwren/testTheme/master/src/images/cabin.png">
+    <title>icoDoc</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="Tests.html" title="Tests"><i class="icon-lab"></i></a></li>
+        <li><i class="icon-home current-selection"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1>icoDoc</h1>
+      <div class="post-body"><p>A theme for the <a href="https://github.com/colinwren/cabin">Cabin</a> static site generator.</p>
+<p>This theme is used to build project documentation sites. It is great for use on GitHub or for internal projects within a company.</p>
+<h1>Usage</h1>
+<h2>Setup</h2>
+<p>Before using icoDoc, make sure you have Cabin installed:</p>
+<pre><code class="lang-bash"><div class="highlight"><pre>npm install -g cabin
+</pre></div>
+</code></pre>
+<p>Then run the following command to scaffold out a site generator using this theme:</p>
+<pre><code class="lang-bash"><div class="highlight"><pre>cabin new docs ChrisWren/icoDoc
+</pre></div>
+</code></pre>
+<p>After scaffolding a site generator, you can run it by entering the following command in the <code>docs</code> folder:</p>
+<pre><code class="lang-bash"><div class="highlight"><pre>grunt server
+</pre></div>
+</code></pre>
+<h1>What&#39;s included</h1>
+<h2>IcoMoon</h2>
+<p>This theme uses <a href="http://icomoon.io/">IcoMoon&#39;s icon fonts</a> when creating icon menu links. To use different icons in your project, select icons in the <a href="http://icomoon.io/app/">IcoMoon app</a>, then click fonts and download the fonts and css into the <code>src/styles</code> folder.</p>
+<h2>Post API</h2>
+<p>Here are the following post properties used by this theme:</p>
+<h3>Required:</h3>
+<h4>title</h4>
+<p>Type: <code>String</code></p>
+<p>This is the title of the post which is used in the url, document title, and the header of the generated documentation page.</p>
+<h3>Optional:</h3>
+<h4>display</h4>
+<p>Type: <code>String</code></p>
+<p>This property optionally overrides the <code>title</code> so that the document title and header are different from the url. This is useful in overriding the root post which has the title <code>index</code> as you will likely want to display something like <code>Home</code> instead. </p>
+<h4>icon</h4>
+<p>Type: <code>String</code></p>
+<p>This is the class suffix of the icon to use in the navigation. For example, if I specified <code>icon: home</code>, the navigation would use the IcoMoon class <code>icon-home</code> when rendering the icon-font navigation link to the post.  </p>
+</div>
+    </div><a href="https://github.com/ChrisWren/icoDoc"><img style="position: fixed; top: 0; right: 0; border: 0; z-index:100;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+  </body>
+</html>
