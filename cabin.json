@@ -8,7 +8,7 @@
   "gruntPages": {
     "posts": {
       "src": "posts",
-      "dest": "site",
+      "dest": "dist",
       "layout": "src/layouts/post.<%= templateLang %>",
       "url": ":title"
     }

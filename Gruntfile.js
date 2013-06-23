@@ -32,7 +32,7 @@ module.exports = function (grunt) {
           middleware: function (connect) {
             return [
               // These dir names have to be hardcoded
-              mountFolder(connect, 'site'),
+              mountFolder(connect, 'dist'),
               mountFolder(connect, 'src')
             ];
           }
@@ -49,18 +49,18 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
-            'site/*',
+            'dist/*',
             // This is for making a subtree repo don't delete
-            '!site/.git*'
+            '!dist/.git*'
           ]
         }]
       },
-      server: 'site'
+      server: 'dist'
     },
     compass: {
       options: {
         sassDir: 'src/styles',
-        cssDir: 'site/styles',
+        cssDir: 'dist/styles',
         imagesDir: 'src/images',
         relativeAssets: true
       },
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: 'src',
-          dest: 'site',
+          dest: 'dist',
           src: [
             '*.{ico,txt}',
             '.htaccess',
