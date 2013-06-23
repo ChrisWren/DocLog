@@ -1,6 +1,9 @@
 extends base
 block title
-  title= post.title
+  if post.display
+    title= post.display
+  else
+    title= post.title
 block nav
   nav.nav
     ul.nav-links
@@ -23,4 +26,4 @@ block nav
       h1= post.display
     else
       h1= post.title
-    div!= post.content
+    div.post-body!= post.content
