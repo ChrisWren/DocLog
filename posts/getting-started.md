@@ -2,6 +2,7 @@
 title: index
 display: icoDoc
 icon: home
+date: 0
 ----
 A theme for the [Cabin](https://github.com/colinwren/cabin) static site generator.
 
