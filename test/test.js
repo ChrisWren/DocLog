@@ -13,6 +13,6 @@ describe('When the theme is built', function () {
 
   it('it creates posts in the expected location', function() {
     fs.existsSync('dist/index.html').should.be.ok;
-    fs.existsSync('dist/Team.html').should.be.ok;
+    fs.existsSync('dist/Tests.html').should.be.ok;
   });
 });
