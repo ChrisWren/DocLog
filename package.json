@@ -1,9 +1,13 @@
 {
-  "name": "ProjDoc",
+  "name": "icoDoc",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisWren/icoDoc.git"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-pages": "~0.0.0",
+    "grunt-pages": "~0.2.3",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-compass": "~0.2.0",
     "grunt-contrib-connect": "~0.2.0",
