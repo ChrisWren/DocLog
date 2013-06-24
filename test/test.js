@@ -12,7 +12,7 @@ describe('When the theme is built', function () {
   });
 
   it('it creates posts in the expected location', function() {
-    fs.existsSync('.tmp/index.html').should.be.ok;
-    fs.existsSync('.tmp/Team.html').should.be.ok;
+    fs.existsSync('dist/index.html').should.be.ok;
+    fs.existsSync('dist/Team.html').should.be.ok;
   });
 });
