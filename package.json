@@ -5,6 +5,8 @@
     "type": "git",
     "url": "https://github.com/ChrisWren/icoDoc.git"
   },
+  "dependencies": {
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-pages": "~0.2.3",
