@@ -1,6 +1,7 @@
 var fs = require('fs');
-require('should');
 var spawn = require('child_process').spawn;
+
+require('should');
 
 describe('When the theme is built', function () {
 
