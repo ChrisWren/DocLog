@@ -23,7 +23,7 @@ cabin new docs ChrisWren/icoDoc
 
 After scaffolding a site generator, you can run it by entering the following command in the `docs` folder:
 ```bash
-grunt server
+grun
 ```
 
 # What's included
@@ -40,14 +40,14 @@ Here are the following post properties used by this theme:
 #### title
 Type: `String`
 
-This is the title of the post which is used in the url, document title, and the header of the generated documentation page.
+The title of the post which is used in the url, document title, and the header of the generated documentation page.
 
 ### Optional:
 
 #### display
 Type: `String`
 
-This property optionally overrides the `title` so that the document title and header are different from the url. This is useful in overriding the root post which has the title `index` as you will likely want to display something like `Home` instead. 
+This property optionally overrides the `title` so that the document title and header are different from the url. This is useful in overriding the root post which has the title `index` as you will likely want to display something else. 
 
 #### icon
 Type: `String`
