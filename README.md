@@ -23,7 +23,7 @@ cabin new docs ChrisWren/icoDoc
 
 After scaffolding a site generator, you can run it by entering the following command in the `docs` folder:
 ```bash
-grun
+grunt
 ```
 
 # What's included
