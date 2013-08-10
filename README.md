@@ -1,24 +1,24 @@
-# icoDoc
+# DocLog
 > A theme for the [Cabin](https://github.com/colinwren/cabin) static site generator.
 
-[![Travis Status](https://travis-ci.org/ChrisWren/icoDoc.png)](https://travis-ci.org/ChrisWren/icoDoc)
+[![Travis Status](https://travis-ci.org/ChrisWren/DocLog.png)](https://travis-ci.org/ChrisWren/DocLog)
 
 This theme is used to build project documentation sites. It is great for use on GitHub or for internal projects within a company.
 
-Click [here](http://chriswren.github.io/icoDoc/) to see a demo of what it looks like.
+Click [here](http://chriswren.github.io/DocLog/) to see a demo of what it looks like.
 
 # Usage
 
 ## Setup
 
-Before using icoDoc, make sure you have Cabin installed:
+Before using DocLog, make sure you have Cabin installed:
 ```bash
 npm install -g cabin
 ```
 
 Then run the following command to scaffold out a site generator using this theme:
 ```bash
-cabin new docs ChrisWren/icoDoc
+cabin new docs ChrisWren/DocLog
 ```
 
 After scaffolding a site generator, you can run it by entering the following command in the `docs` folder:
